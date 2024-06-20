@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Registeration</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="infocont subcont" id="infocont" style="display: block;">
+            <p class="contheading">
+                <span style="color:var(--themeg)">Yoga Class</span> Registeration
+            </p>
+            <p class="infotext pininfotext">
+                <img src="images/pin.png" alt="" class="infoicons">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether you're a beginner or an experienced yogi, my classes are tailored to accommodate all levels. Together, we will embark on a journey to enhance flexibility, balance, and overall well-being. Each session will focus on aligning the body and mind, leaving you feeling refreshed and centered.
+            </p>
+            <div class="new-row"></div>
+            <p class="infotext">
+                <img src="images/time.png" alt="" class="infoicons">
+                &nbsp;&nbsp;&nbsp;1 hr
+            </p>
+            <div class="new-row"></div>
+            <p class="infotext">
+                <img src="images/fees.png" alt="" class="infoicons">
+                &nbsp;&nbsp;&nbsp;&#x20B9;499
+            </p>
+            <div class="buttonenclose">
+                <button class="infonext nextbutton" id="infonext">Next</button>
+            </div>
+        </div>
+        <div class="datecont subcont" id="datecont" style="display: none;">
+            <p class="contheading">
+                <span style="color:var(--themeg)">Select</span> Class Date
+            </p>
+            <div class="calander" id="calander">
+                <div class="montharea">
+                    <p class="prevmonth" id="prevmonth">&#10094;</p>
+                    <p class="currmonth" id="currmonth">January, 2024</p>
+                    <p class="nextmonth" id="nextmonth">&#10095;</p>
+                </div>
+                <div class="calandertable" id="calandertable">
+                    <div class="calanderrow">
+                        <div class="calandertableitem calanderdayitem">Sun</div>
+                        <div class="calandertableitem calanderdayitem">Mon</div>
+                        <div class="calandertableitem calanderdayitem">Tue</div>
+                        <div class="calandertableitem calanderdayitem">Wed</div>
+                        <div class="calandertableitem calanderdayitem">Thu</div>
+                        <div class="calandertableitem calanderdayitem">Fri</div>
+                        <div class="calandertableitem calanderdayitem">Sat</div>
+                    </div>
+                    <div class="calanderrow">
+                        <div id="calanderrc10" class="calandertableitem disableddate"></div>
+                        <div id="calanderrc11" class="calandertableitem"></div>
+                        <div id="calanderrc12" class="calandertableitem"></div>
+                        <div id="calanderrc13" class="calandertableitem"></div>
+                        <div id="calanderrc14" class="calandertableitem"></div>
+                        <div id="calanderrc15" class="calandertableitem"></div>
+                        <div id="calanderrc16" class="calandertableitem disableddate"></div>
+                    </div>
+                    <div class="calanderrow">
+                        <div id="calanderrc20" class="calandertableitem disableddate"></div>
+                        <div id="calanderrc21" class="calandertableitem"></div>
+                        <div id="calanderrc22" class="calandertableitem"></div>
+                        <div id="calanderrc23" class="calandertableitem"></div>
+                        <div id="calanderrc24" class="calandertableitem"></div>
+                        <div id="calanderrc25" class="calandertableitem"></div>
+                        <div id="calanderrc26" class="calandertableitem disableddate"></div>
+                    </div>
+                    <div class="calanderrow">
+                        <div id="calanderrc30" class="calandertableitem disableddate"></div>
+                        <div id="calanderrc31" class="calandertableitem"></div>
+                        <div id="calanderrc32" class="calandertableitem"></div>
+                        <div id="calanderrc33" class="calandertableitem"></div>
+                        <div id="calanderrc34" class="calandertableitem"></div>
+                        <div id="calanderrc35" class="calandertableitem"></div>
+                        <div id="calanderrc36" class="calandertableitem disableddate"></div>
+                    </div>
+                    <div class="calanderrow">
+                        <div id="calanderrc40" class="calandertableitem disableddate"></div>
+                        <div id="calanderrc41" class="calandertableitem"></div>
+                        <div id="calanderrc42" class="calandertableitem"></div>
+                        <div id="calanderrc43" class="calandertableitem"></div>
+                        <div id="calanderrc44" class="calandertableitem"></div>
+                        <div id="calanderrc45" class="calandertableitem"></div>
+                        <div id="calanderrc46" class="calandertableitem disableddate"></div>
+                    </div>
+                    <div class="calanderrow">
+                        <div id="calanderrc50" class="calandertableitem disableddate"></div>
+                        <div id="calanderrc51" class="calandertableitem"></div>
+                        <div id="calanderrc52" class="calandertableitem"></div>
+                        <div id="calanderrc53" class="calandertableitem"></div>
+                        <div id="calanderrc54" class="calandertableitem"></div>
+                        <div id="calanderrc55" class="calandertableitem"></div>
+                        <div id="calanderrc56" class="calandertableitem disableddate"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonenclose">
+                <button class="datenext nextbutton disablednextbutton" id="datenext">Next</button>
+            </div>
+        </div>
+        <div class="timecont subcont" id="timecont" style="display: none;">
+            <p class="contheading">
+                Select <span style="color:var(--themeg)">Time</span> of Class
+            </p>
+            
+            <div class="timingdiv" id="timingdiv">
+                <p class="timebutton" id="timebutton1">5:00 am</p>
+                <p class="timebutton" id="timebutton2">6:00 am</p>
+                <p class="timebutton" id="timebutton3">7:00 am</p>
+                <p class="timebutton" id="timebutton4">8:00 am</p>
+                <p class="timebutton" id="timebutton5">9:00 am</p>
+                <p class="timebutton" id="timebutton6">10:00 am</p>
+                <p class="timebutton" id="timebutton7">6:00 pm</p>
+                <p class="timebutton" id="timebutton8">7:00 pm</p>
+            </div>
+            
+            <div class="buttonenclose">
+                <button class="timenext nextbutton disablednextbutton" id="timenext">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="register.js"></script>
+</html>

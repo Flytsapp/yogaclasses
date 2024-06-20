@@ -1,0 +1,215 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--backtheme);
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.profilepic{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 40vh;
+}
+
+.sectiontitle{
+    margin: 0;
+    padding: 1vh;
+    color: var(--themeg);
+    font-size: 7vh;
+    font-family: BaskVill;
+}
+
+.sectiondesc{
+    margin: 0;
+    padding: 0;
+    color: var(--themed);
+    font-size: 4vh;
+    width: 50%;
+    text-align: center;
+    font-family: var(--descfont);
+}
+
+.externallinkspar{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.externallinks{
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    justify-content: space-between;
+}
+
+.externallink img{
+    height: 100%;
+}
+
+.servicedesc{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    cursor: default;
+}
+
+.servicedeschead{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicedescimgpart{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.servicedescimgtitle, .samplevideotitle{
+    color: white;
+    font-family: BaskVill;
+    background-color: var(--themeg);
+    margin: 0;
+    padding: 1vh;
+    font-size: 6vh;
+    border-radius: 2vh 2vh 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.samplevideotitle{
+    margin-top: 20vh;
+    width: 50vw;
+}
+
+.samplevideo{
+    width: 50vw;
+    margin: 0;
+}
+
+.servicedescmain{
+    background-color: var(--themew);
+    color: var(--themed);
+    text-align: center;
+    font-family: var(--descfont);
+    width: 50%;
+    word-wrap: break-word;
+    font-size: 4vh;
+    margin: 0;
+    padding: 0;
+}
+
+.serviceregister{
+    background-color: var(--themew);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 24vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 2vh 2vh;
+}
+
+.registerbutton{
+    background-color: var(--themeg);
+    width: 70%;
+    font-size: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: BaskVill;
+    border-radius: 100vh;
+    padding: 1vh;
+}
+
+
+@media (max-aspect-ratio:1/1){
+    .profilepic{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 40vw;
+    }
+
+    .sectiontitle{
+        font-size: 10vw;
+        padding: 1vw;
+    }
+    
+    .sectiondesc{
+        font-size: 4vw;
+        width: 80%;
+        text-align: center;
+    }
+
+    .externallinkspar{
+        justify-content: center;
+    }
+    
+    .externallinks{
+        width: 50%;
+        height: 8vw;
+    }
+
+    .servicedescimgpart{
+        width: 95%;
+    }
+    
+    .servicedescimgtitle, .samplevideotitle{
+        font-size: 6vw;
+        border-radius: 2vw 2vw 0 0;
+        padding: 1vw;
+    }
+    
+    .samplevideotitle{
+        width: 95vw;
+    }
+
+    .samplevideo{
+        width: 95vw;
+    }
+
+    .servicedescmain{
+        width: 95%;
+        font-size: 4vw;
+    }
+    
+    .serviceregister{
+        width: 95%;
+        height: 24vw;
+        border-radius: 0 0 2vw 2vw;
+    }
+    
+    .registerbutton{
+        font-size: 8vw;
+        border-radius: 100vw;
+        padding: 1vw;
+    }
+
+}

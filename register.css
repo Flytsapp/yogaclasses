@@ -1,0 +1,239 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backtheme);
+}
+body *{
+    cursor: default;
+}
+
+.container{
+    background-color: var(--themew);
+    border-radius: min(2vh, 2vw);
+    box-sizing: border-box;
+    padding: min(2vh, 2vw);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contheading{
+    font-family: BaskVill;
+    font-size: min(6vh, 6vw);
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+
+.infocont{
+    width: 100%;
+}
+
+.new-row{
+    display: block;
+    width: 100%;
+    height: min(5vh, 5vw);
+}
+
+.infotext{
+    font-family: var(--descfont);
+    font-size: min(4vh, 4vw);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pininfotext{
+    align-items: flex-start;
+}
+
+.infoicons{
+    width: min(5vh, 5vw);
+    height: min(5vh, 5vw);
+    filter: invert(1);
+}
+
+.buttonenclose{
+    height: min(10vh, 10vw);
+    margin: min(2vh, 2vw);
+    box-sizing: border-box;
+}
+
+.nextbutton{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: var(--descfont);
+    color: var(--themeg);
+    border: 2px solid var(--themeg);
+    width: 35%;
+    margin: 0;
+    padding: min(1vh, 1vw);
+    font-size: min(4vh, 4vw);
+    margin-left: auto;
+    margin-top: min(2vh, 2vw);
+    cursor: pointer;
+}
+.nextbutton:hover{
+    background: var(--themeg);
+    color: var(--themew);
+}
+.disablednextbutton{
+    color: #ddd;
+    border-color: #ddd;
+    cursor: default;
+}
+.disablednextbutton:hover{
+    background: transparent;
+    color: #ddd;
+}
+
+@media(max-aspect-ratio: 10/7){
+    .container{
+        width: 95%;
+    }
+}
+
+.calander{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.montharea{
+    display: block;
+    width: min(50vh, 50vw);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--themew);
+    background-color: var(--themeg);
+    font-family: BaskVill;
+    font-size: min(4vh, 4vw);
+    border: 2px solid var(--themeg);
+}
+
+.montharea *{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.currmonth{
+    width: 70%;
+    text-align: center;
+    cursor: default;
+}
+
+.calandertable{
+    margin: 0;
+    padding: 0;
+    width: min(50vh, 50vw);
+    border: 2px solid var(--themeg);
+}
+
+.calanderrow{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(min(50vh, 50vw) / 7);
+}
+
+.calandertableitem{
+    width: calc(min(50vh, 50vw) / 7);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(3vh, 3vw);
+    font-family: var(--descfont);
+    cursor: pointer;
+}
+
+.calanderdayitem{
+    color: var(--themeg);
+    cursor: default;
+}
+.calandertableitem:hover{
+    border: 2px solid var(--themeg);
+    color: var(--themeg);
+    box-sizing: border-box;
+}
+.calanderdayitem:hover{
+    border: none;
+    color: var(--themeg);
+}
+
+.disableddate{
+    color: #ddd;
+    cursor: default;
+}
+.disableddate:hover{
+    border: none;
+    color: #ddd;
+}
+.selecteddate{
+    color: var(--themew);
+    background-color: var(--themeg);
+}
+.selecteddate:hover{
+    border: none;
+    color: var(--themew);
+}
+.timingdiv{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    margin: 0;
+    padding: 2vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.timebutton{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 45%;
+    height: 8vh;
+    font-size: 4vh;
+    font-family: var(--descfont);
+    box-sizing: border-box;
+    border: 1px solid var(--themed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timebutton:hover{
+    border: 2px solid var(--themeg);
+    font-size: 6vh;
+    color: var(--themeg);
+}
+.selectedtime{
+    background-color: var(--themeg);
+    color: var(--themew);
+}
+.selectedtime:hover{
+    color: var(--themew);
+}
